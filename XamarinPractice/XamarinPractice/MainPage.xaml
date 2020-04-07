@@ -25,13 +25,28 @@
 			HorizontalOptions="Center"
 		/>
 
-		<Button
-			Text="Klik op mij om iets te doen"
-			Padding="15"
-			VerticalOptions="CenterAndExpand"
-			HorizontalOptions="Center"
-			Clicked="OnButtonClicked"
-		/>
+		<StackLayout
+			Orientation="Horizontal"
+			HorizontalOptions="FillAndExpand"
+		>
+			<Button
+				Text="Klik op mij om iets te doen"
+				Padding="15"
+				VerticalOptions="CenterAndExpand"
+				HorizontalOptions="End"
+				Clicked="OnButtonClicked"
+			/>
+
+			<Button
+				Text="Klik op mij voor data"
+				Padding="15"
+				VerticalOptions="CenterAndExpand"
+				HorizontalOptions="End"
+				Clicked="OnDataButtonClicked"
+			/>
+		</StackLayout>
+		
+		
 
 	</StackLayout>
 </ContentPage>
