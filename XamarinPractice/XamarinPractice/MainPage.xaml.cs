@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using XamarinPractice.Shared;
 
 namespace XamarinPractice
 {
@@ -24,7 +25,11 @@ namespace XamarinPractice
 		{
 			isTaskRunning = !isTaskRunning;
 			isLoading.IsRunning = isTaskRunning;
-			mainLabel.BackgroundColor = Color.Red;
+
+			mainLabel.BackgroundColor = Randomizer
+				.GetRandomDouble() > 0.5
+					? Color.Red
+					: Color.Green;
 		}
 	}
 }
