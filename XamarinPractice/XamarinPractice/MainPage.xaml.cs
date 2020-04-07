@@ -31,5 +31,11 @@ namespace XamarinPractice
 					? Color.Red
 					: Color.Green;
 		}
+
+		void OnDataButtonClicked(object sender, EventArgs args)
+		{
+			var retriever = new DataRetriever();
+			var posts = retriever.GetPosts();
+		}
 	}
 }
